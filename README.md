@@ -73,11 +73,3 @@ Uygulama `http://localhost:5173` adresinde açılır.
 | `npm run test` | Birim testlerini çalıştırır |
 | `npm run lint` | Kodu oxlint ile denetler |
 
-## Netlify'a yayınlama
-
-Proje kökündeki `netlify.toml` derleme komutunu, yayın klasörünü ve sayfa yönlendirmesini tanımlar. Bu yönlendirme sayesinde `/gorev/...` gibi adresler yenilendiğinde 404 hatası alınmaz.
-
-1. Projeyi GitHub'a gönder.
-2. Netlify'da **Add new site → Import an existing project** adımlarını izleyip GitHub deposunu seç.
-3. Ayarlar `netlify.toml` dosyasından okunur (`npm run build`, `dist`). **Deploy** ile yayına al.
-4. Oluşan `*.netlify.app` adresini bu dosyanın başına ve teslim formuna ekle.
